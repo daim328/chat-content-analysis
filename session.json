@@ -1,17 +1,27 @@
 {
   "project": "文本分析-集体决策",
   "date": "2026-05-05",
-  "files_created": [
-    "verify_classifications.py"
+  "scripts_created": [
+    "classify_results.py",
+    "verify_classifications.py",
+    "wait_classify.py"
   ],
   "files_modified": [
     "dataset2026.xlsx"
   ],
   "new_columns": [
+    "group_categories1",
+    "group_categories2",
+    "individual_categories1",
+    "individual_categories2",
     "group_indicator1",
     "group_indicator2",
     "individual_indicator1",
-    "individual_indicator2"
+    "individual_indicator2",
+    "wait1",
+    "wait2",
+    "message1",
+    "message2"
   ],
   "verification_summary": {
     "group_indicator1": {
@@ -31,16 +41,25 @@
       "inaccurate": 0
     }
   },
+  "wait_classification": {
+    "wait1": {
+      "like_wait": 0,
+      "neutral": 182,
+      "dislike_wait": 1
+    },
+    "wait2": {
+      "like_wait": 7,
+      "neutral": 153,
+      "dislike_wait": 23
+    }
+  },
+  "message_counts": {
+    "message1": "TR=0 messages per subject (mean=2.5, max=14)",
+    "message2": "TR=1 messages per subject (mean=2.1, max=14)"
+  },
   "inaccurate_groups_tr1": [
     "Group 10",
     "Group 22"
   ],
-  "inaccurate_subjects": [
-    "mldp6kdi",
-    "uxkihpwg",
-    "4vn5iz9u",
-    "vycv5y5a",
-    "ee6sjzk2",
-    "dufx3vxe"
-  ]
+  "git_remote": "git@github.com:daim328/chat-content-analysis.git"
 }
