@@ -1,15 +1,16 @@
 {
   "project": "文本分析-集体决策",
   "date": "2026-05-05",
-  "scripts_created": [
+  "scripts": [
     "classify_results.py",
     "verify_classifications.py",
-    "wait_classify.py"
+    "wait_classify.py",
+    "threat_classify.py"
   ],
   "files_modified": [
     "dataset2026.xlsx"
   ],
-  "new_columns": [
+  "columns_in_dataset": [
     "group_categories1",
     "group_categories2",
     "individual_categories1",
@@ -21,45 +22,39 @@
     "wait1",
     "wait2",
     "message1",
-    "message2"
+    "message2",
+    "threat1",
+    "threat2"
   ],
-  "verification_summary": {
-    "group_indicator1": {
-      "accurate": 143,
-      "inaccurate": 0
+  "results": {
+    "group_verification": {
+      "tr0_all_accurate": true,
+      "tr1_inaccurate_groups": [
+        "Group 10",
+        "Group 22"
+      ],
+      "tr1_inaccurate_n": 6
     },
-    "group_indicator2": {
-      "accurate": 113,
-      "inaccurate": 6
+    "individual_verification": {
+      "all_accurate": true
     },
-    "individual_indicator1": {
-      "accurate": 144,
-      "inaccurate": 0
+    "wait_classification": {
+      "wait1": {
+        "-1": 0,
+        "0": 182,
+        "1": 1
+      },
+      "wait2": {
+        "-1": 7,
+        "0": 153,
+        "1": 23
+      }
     },
-    "individual_indicator2": {
-      "accurate": 120,
-      "inaccurate": 0
+    "threat": {
+      "threat1": "all 0",
+      "threat2": "all 0",
+      "any_threats": false
     }
   },
-  "wait_classification": {
-    "wait1": {
-      "like_wait": 0,
-      "neutral": 182,
-      "dislike_wait": 1
-    },
-    "wait2": {
-      "like_wait": 7,
-      "neutral": 153,
-      "dislike_wait": 23
-    }
-  },
-  "message_counts": {
-    "message1": "TR=0 messages per subject (mean=2.5, max=14)",
-    "message2": "TR=1 messages per subject (mean=2.1, max=14)"
-  },
-  "inaccurate_groups_tr1": [
-    "Group 10",
-    "Group 22"
-  ],
   "git_remote": "git@github.com:daim328/chat-content-analysis.git"
 }
