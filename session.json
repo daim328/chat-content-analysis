@@ -1,0 +1,46 @@
+{
+  "project": "文本分析-集体决策",
+  "date": "2026-05-05",
+  "files_created": [
+    "verify_classifications.py"
+  ],
+  "files_modified": [
+    "dataset2026.xlsx"
+  ],
+  "new_columns": [
+    "group_indicator1",
+    "group_indicator2",
+    "individual_indicator1",
+    "individual_indicator2"
+  ],
+  "verification_summary": {
+    "group_indicator1": {
+      "accurate": 143,
+      "inaccurate": 0
+    },
+    "group_indicator2": {
+      "accurate": 113,
+      "inaccurate": 6
+    },
+    "individual_indicator1": {
+      "accurate": 144,
+      "inaccurate": 0
+    },
+    "individual_indicator2": {
+      "accurate": 120,
+      "inaccurate": 0
+    }
+  },
+  "inaccurate_groups_tr1": [
+    "Group 10",
+    "Group 22"
+  ],
+  "inaccurate_subjects": [
+    "mldp6kdi",
+    "uxkihpwg",
+    "4vn5iz9u",
+    "vycv5y5a",
+    "ee6sjzk2",
+    "dufx3vxe"
+  ]
+}
